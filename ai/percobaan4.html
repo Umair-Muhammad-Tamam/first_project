@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontak Kami</title>
+</head>
+<body>
+    <main>
+        <section aria-labelledby="kontak-title">
+            <h2 id="kontak-title">Kontak Kami</h2>
+
+            <form action="/submit-kontak" method="post" novalidate>
+                <fieldset>
+                <legend>FORMULIR</legend>
+                <!-- Email -->
+                <div>
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="nama@domain.com"
+                        required
+                        autocomplete="email"
+                    >
+                </div>
+
+                <!-- Nama -->
+                <div>
+                    <label for="nama">Nama</label>
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Nama lengkap"
+                        required
+                        autocomplete="name"
+                    >
+                </div>
+                </fieldset>
+
+                <!-- Jenis Kelamin: gunakan fieldset/legend -->
+                <fieldset>
+                    <legend>Jenis Kelamin</legend>
+
+                    <input type="radio" id="laki" name="jenis_kelamin" value="laki-laki">
+                    <label for="laki">Laki-laki</label>
+
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </fieldset>
+
+                <!-- Tombol submit -->
+                <div>
+                    <button type="submit">Kirim</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+
+</body>
+</html>

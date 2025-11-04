@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perbedaan div dan span</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    /* Styling umum */
+    .kotak {
+      margin-bottom: 20px;
+    }
+
+    /* div = elemen blok */
+    div.contoh-div {
+      border: 2px solid blue;
+      background-color: rgba(0, 0, 255, 0.1);
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+
+    /* span = elemen inline */
+    span.contoh-span {
+      border: 2px solid red;
+      background-color: rgba(255, 0, 0, 0.1);
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Perbandingan &lt;div&gt; vs &lt;span&gt;</h2>
+
+  <div class="kotak">
+    <h3>1️⃣ Contoh div (blok)</h3>
+    <p>
+      <div class="contoh-div">Ini elemen div pertama</div>
+      <div class="contoh-div">Ini elemen div kedua</div>
+      <div class="contoh-div">Setiap div muncul di baris baru</div>
+    </p>
+  </div>
+
+  <div class="kotak">
+    <h3>2️⃣ Contoh span (inline)</h3>
+    <p>
+      <span class="contoh-span">Ini elemen span pertama</span>
+      <span class="contoh-span">Ini elemen span kedua</span>
+      <span class="contoh-span">Semua span tetap dalam satu baris</span>
+    </p>
+  </div>
+
+  <div class="kotak">
+    <h3>Kesimpulan:</h3>
+    <ul>
+      <li><code>&lt;div&gt;</code> = elemen <b>blok</b>, memakan lebar penuh, selalu turun ke baris baru.</li>
+      <li><code>&lt;span&gt;</code> = elemen <b>inline</b>, hanya selebar isinya, tidak turun ke baris baru.</li>
+      <li>Keduanya bisa diberi CSS, tapi fungsi strukturalnya berbeda.</li>
+    </ul>
+  </div>
+</body>
+</html>
